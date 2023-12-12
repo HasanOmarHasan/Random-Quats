@@ -1,0 +1,27 @@
+/* set of default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5% /* makes 1rem 10px */
+}
+body {
+    font-size: 1.4em; /* default font of 16px */
+    font-family: "Poppins", sans-serif;
+    line-height: 1.3;
+    color: #373737;
+}
+
+/* **************t Tag **************** */
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: "Montserrat", sans-serif;
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
