@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Quote</title>
 
     <!-- ====> font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,29 +21,62 @@
   </head>
   <body>
     <main>
-      <blockquote  class="d-flex justify-content-center align-items-center vh-100 text-center " id="">
-        <div>
-       
-          <!-- <h1 class="text-center p-5 m">Quates</h1> -->
-        
-        <h1 class=" mb-5 pb-5">
-          <span id="quote">
-
-            Click to rendem Qutes
-          </span> <br> <br>
-          <span id="author">
-          </span>
-        </h1>
-        <button
-          class="btn btn-outline-dark py-2 px-5 fs-2 rounded-2"
-          onclick="rendemQoute()"
+      <div class="vh-100">
+        <blockquote
+          class="d-flex justify-content-center align-items-center text-center px-1 h-100"
+          id=""
         >
-          Genrate Quote <i class="fa-solid fa-repeat fa-spin"></i>
-        </button>
+          <div
+            class="shadow-lg w-75 h-50 py-5 rounded-4 px-4 position-relative bg-white"
+          >
+          <div class="position-absolute top-0 start-50 translate-middle " id="img"></div>
+            <i
+              class="fa-solid fa-quote-left quote-icon position-absolute top-0 start-0 translate-middle-y"
+            ></i>
+            <h1 class="mb-5 py-5">
+              <span id="quote" class="fw-medium lh-base"> Click to rendem Qutes </span> <br />
+              <br />
+              <span id="author" class="lead text-muted fs-2 "></span>
+            </h1>
+
+            <button
+              class="btn btn-outline-dark py-2 px-5 fs-2 rounded-2"
+              onclick="rendemQoute()"
+            >
+              Genrate Quote <i class="fa-solid fa-repeat fa-spin"></i>
+            </button>
+
+            <!-- <div id="share">
+              
+              <a
+                class="twitter"
+                href="https://twitter.com/intent/tweet?status={{title}}+{{url}}"
+                target="blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+           
+              
+              <a
+                class="linkedin"
+                href="https://www.linkedin.com/shareArticle?mini=true&url={{url}}&title={{title}}&source={{source}}"
+                target="blank"
+                ><i class=" fa-brands fa-linkedin"></i
+              ></a>
+            </div> -->
+            
+            <i
+              class="fa-solid fa-quote-right quote-icon quote-right position-absolute bottom-0 end-0 translate-middle"
+            ></i>
+          </div>
+        </blockquote>
       </div>
-      </blockquote>
     </main>
 
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
     <script src="js/app.js"></script>
 
     <!-- ===> bootstrab <=== -->
